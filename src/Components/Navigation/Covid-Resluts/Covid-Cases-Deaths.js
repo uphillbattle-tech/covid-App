@@ -29,8 +29,8 @@ const CovidCases = () => {
         <input className="search-box" type="text" onChange={getsearch}  
             placeholder="Search By Country"
         />
-      <Table striped bordered hover>
-        <thead>
+      <Table  striped bordered hover>
+        <thead >
           <tr>
             <th>Country</th>
             <th>New Confirmed Cases</th>
@@ -39,7 +39,7 @@ const CovidCases = () => {
             <th>Total Confirmed Deaths</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody >
             {results.filter((val) => {
                 if (searchTerm == "") {
                     return val
@@ -47,8 +47,8 @@ const CovidCases = () => {
                     return val
                 }
             }).map(result => (
-                <tr>
-                    <td>{result.Country}</td>
+                <tr key={result.Country}>
+                    <td >{result.Country}</td>
                     <td> {result.NewConfirmed}</td>
                     <td> {result.TotalConfirmed}</td>
                     <td> {result.NewDeaths}</td>
