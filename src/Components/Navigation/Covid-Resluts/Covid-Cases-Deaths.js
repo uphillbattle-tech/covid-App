@@ -25,7 +25,7 @@ const CovidCases = () => {
 
   return (
     <div className="App">
-        <h1 className="header1">Covid Cases And Deaths</h1>
+        <h1 className="App">Covid Cases And Deaths</h1>
         <input className="search-box" type="text" onChange={getsearch}  
             placeholder="Search By Country"
         />
