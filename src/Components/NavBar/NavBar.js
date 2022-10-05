@@ -17,9 +17,9 @@ const NavBar = () => {
     <div>
       <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand as={Link} to="/">Navbar</Navbar.Brand>
+          <Navbar.Brand as={Link} to="/">Covid Home</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
+
             <NavDropdown title="Covid Results" id="basic-nav-dropdown">
                 <Nav.Item as={Link} to="/covid-deaths">Covid-Cases-Deaths</Nav.Item>
                 <NavDropdown.Divider />
