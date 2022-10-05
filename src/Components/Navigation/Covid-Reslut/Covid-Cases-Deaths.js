@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Table from "react-bootstrap/Table";
-import '../Covid-Resluts/covid.css'
+import './covid.css'
 
 const CovidCases = () => {
   const [results, setReulsts] = useState([]);

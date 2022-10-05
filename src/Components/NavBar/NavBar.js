@@ -3,7 +3,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Home from '../Navigation/Home';
-import CovidCases from '../Navigation/Covid-Resluts/Covid-Cases-Deaths';
+import CovidCases from '../Navigation/Covid-Reslut/Covid-Cases-Deaths';
 import {
     BrowserRouter,
     Routes,
@@ -20,7 +20,7 @@ const NavBar = () => {
           <Navbar.Brand as={Link} to="/">Covid Home</Navbar.Brand>
           <Nav className="me-auto">
 
-            <NavDropdown title="Covid Results" id="basic-nav-dropdown">
+            <NavDropdown title="Covid Result" id="basic-nav-dropdown">
                 <Nav.Item as={Link} to="/covid-deaths">Covid-Cases-Deaths</Nav.Item>
                 <NavDropdown.Divider />
             </NavDropdown>
