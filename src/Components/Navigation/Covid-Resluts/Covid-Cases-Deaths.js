@@ -32,7 +32,7 @@ const CovidCases = () => {
       <Table  striped bordered hover>
         <thead >
           <tr>
-            <th>Country</th>
+            <th>Countries</th>
             <th>New Confirmed Cases</th>
             <th>Total Confirmed Cases</th>
             <th>New Confirmed Deaths</th>
