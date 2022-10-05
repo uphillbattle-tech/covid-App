@@ -4,7 +4,7 @@
 const Home = () => {
   return (
     <div className="App">
-      <h1>Home new</h1>
+      <h1>Covid Home Page</h1>
     </div>
   );
 };
