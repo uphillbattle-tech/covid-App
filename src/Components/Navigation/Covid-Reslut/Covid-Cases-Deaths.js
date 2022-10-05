@@ -23,7 +23,7 @@ const CovidCases = () => {
   }, []);
 
   useEffect(() => {
-    catchingError("")
+    catchingError()
   }, [])
 
   const getsearch = e => {
