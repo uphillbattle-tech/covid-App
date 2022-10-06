@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Table from "react-bootstrap/Table";
+import Card from 'react-bootstrap/Card';
 
 const HospitalBeds = () => {
   const [beds, setBeds] = useState([]);
@@ -31,7 +32,8 @@ const HospitalBeds = () => {
 
   return (
     <div className="App">
-        <h1 className="header1">Hospital Beds Capacity</h1>
+        <Card.Img  variant="top" src="./images/chart.jpg" />
+        <h1 >Hospital Beds Capacity</h1>
       <input className="search-box" type="text" placeholder="Search By State" onChange={getsearch} />
       <Table striped bordered hover>
         <thead>

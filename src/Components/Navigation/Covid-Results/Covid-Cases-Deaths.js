@@ -24,8 +24,9 @@ const CovidCases = () => {
 
   return (
     <div className="App">
-      <Card.Img variant="top" src="./images/chart.jpg" />
+      <Card.Img  variant="top" src="./images/chart.jpg" />
       <h1 >Covid Cases And Deaths</h1>
+      
       <input
         className="search-box"
         type="text"
