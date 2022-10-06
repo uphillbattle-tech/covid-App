@@ -12,14 +12,17 @@ const CovidCases = () => {
 
   useEffect(() => {
     const getResults = async () => {
-        const Response = await fetch("https://api.covid19api.com/summary");
-        const data = await Response.json();
-        console.log(data);
-        setReulsts(data.Countries);
-      };
-      getResults()
-          
-  }, []);
+      const Response = await fetch("https://api.covid19api.com/summary");
+      const data = await Response.json();
+      console.log(data);
+      setReulsts(data.Countries);
+      
+    };
+    getResults()
+  }, [searchTerm]);
+
+
+  
 
 
 

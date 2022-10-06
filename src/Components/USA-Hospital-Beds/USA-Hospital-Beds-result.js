@@ -7,11 +7,9 @@ const HospitalBeds = () => {
 
   useEffect(() => {
     getBeds();
-  }, []);
+  }, [searchTerm]);
 
-  useEffect(() => {
-    catchingError();
-  }, [])
+
 
   const getBeds = async () => {
     const Response = await fetch(
@@ -27,9 +25,7 @@ const HospitalBeds = () => {
   };
 
 
-  const catchingError = e => {
-    setSearchTerm("")
-  }
+
 
  
 
@@ -39,14 +35,14 @@ const HospitalBeds = () => {
       <input className="search-box" type="text" placeholder="Search By State" onChange={getsearch} />
       <Table striped bordered hover>
         <thead>
-          <tr>
+          <tr >
             <th>States</th>
             <th>Hospital Beds Capacity</th>
             <th>Hospital Beds Total Usage</th>
             <th>Weekly Admissions</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody >
           {beds
             .filter((val) => {
               if (searchTerm == "") {
@@ -58,7 +54,7 @@ const HospitalBeds = () => {
               }
             })
             .map((bed) => (
-              <tr>
+              <tr key={bed.state}>
                 <td>{bed.state}</td>
                 <td>{bed.actuals.hospitalBeds.capacity}</td>
                 <td>{bed.actuals.hospitalBeds.currentUsageTotal}</td>
