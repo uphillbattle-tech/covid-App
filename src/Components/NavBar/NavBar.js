@@ -24,7 +24,7 @@ const NavBar = () => {
           <Navbar.Brand as={Link} to="/">Covid Home</Navbar.Brand>
           <Nav className="me-auto">
 
-            <NavDropdown title="Covid Result" id="basic-nav-dropdown">
+            <NavDropdown title="Covid Results" id="basic-nav-dropdown">
                 <Nav.Item as={Link} to="/covid-deaths">Covid-Cases-Deaths</Nav.Item>
                 <NavDropdown.Divider />
                 <Nav.Item as={Link} to="/hospital-beds">USA Hospital Beds Results</Nav.Item>
