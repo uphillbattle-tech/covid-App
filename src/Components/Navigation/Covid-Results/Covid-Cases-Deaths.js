@@ -7,10 +7,8 @@ const CovidCases = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
-    getResults()
-    
+    getResults();
   }, [searchTerm]);
-
 
   const getResults = async () => {
     const Response = await fetch("https://api.covid19api.com/summary");
@@ -21,7 +19,6 @@ const CovidCases = () => {
 
   const getsearch = (e) => {
     setSearchTerm(e.target.value);
-    
   };
 
   return (
