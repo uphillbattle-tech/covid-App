@@ -6,7 +6,6 @@ const CovidCases = () => {
   const [results, setReulsts] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
 
-
   
 
   
@@ -22,17 +21,13 @@ const CovidCases = () => {
           
   }, []);
 
-  useEffect(() => {
-    catchingError()
-  }, [])
+
 
   const getsearch = e => {
     setSearchTerm(e.target.value)
   }
 
-  const catchingError = e => {
-    setSearchTerm("")
-  }
+
 
 
 
