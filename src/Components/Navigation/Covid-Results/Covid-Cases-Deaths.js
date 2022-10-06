@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Table from "react-bootstrap/Table";
 import "./covid.css";
+import Card from 'react-bootstrap/Card';
 
 const CovidCases = () => {
   const [results, setReulsts] = useState([]);
@@ -23,7 +24,8 @@ const CovidCases = () => {
 
   return (
     <div className="App">
-      <h1 className="header1">Covid Cases And Deaths</h1>
+      <Card.Img variant="top" src="./images/chart.jpg" />
+      <h1 >Covid Cases And Deaths</h1>
       <input
         className="search-box"
         type="text"
