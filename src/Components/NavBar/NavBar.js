@@ -4,7 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Home from '../Navigation/Home';
 import CovidCases from '../Navigation/Covid-Results/Covid-Cases-Deaths';
-import HospitalBeds from '../USA-Hospital-Beds/USA-Hospital-Beds-Results';
+import HospitalBeds from '../Navigation/USA-Hospital-Beds/USA-Hospital-Beds-Results';
 
 
 import {
