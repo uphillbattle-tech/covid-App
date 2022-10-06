@@ -4,11 +4,11 @@ import "./covid.css";
 
 const CovidCases = () => {
   const [results, setReulsts] = useState([]);
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchTerm1, setSearchTerm1] = useState("");
 
   useEffect(() => {
     getResults();
-  }, [searchTerm]);
+  }, []);
 
   const getResults = async () => {
     const Response = await fetch("https://api.covid19api.com/summary");
@@ -18,7 +18,7 @@ const CovidCases = () => {
   };
 
   const getsearch = (e) => {
-    setSearchTerm(e.target.value);
+    setSearchTerm1(e.target.value);
   };
 
   return (
@@ -43,11 +43,11 @@ const CovidCases = () => {
         <tbody>
           {results
             .filter((val) => {
-              if (searchTerm == "") {
+              if (searchTerm1 == "") {
                 return val;
               } else if (
                 val.Country.toLowerCase().includes(
-                  searchTerm.toLocaleLowerCase()
+                  searchTerm1.toLocaleLowerCase()
                 )
               ) {
                 return val;
