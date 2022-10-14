@@ -33,7 +33,7 @@ const HospitalBeds = () => {
   return (
     <div className="App">
         <Card.Img  variant="top" src="./images/chart.jpg" />
-        <h1 >Hospital Beds Capacity</h1>
+        <h1 >Hospital Beds Capacity main</h1>
       <input className="search-box" type="text" placeholder="Search By State" onChange={getsearch} />
       <Table striped bordered hover>
         <thead>
